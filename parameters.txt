@@ -1,0 +1,16 @@
+sample-001  batch-1 RNA
+sample-001  batch-1 ATAC
+sample-002  batch-1 RNA
+sample-002  batch-1 ATAC
+sample-003  batch-1 RNA
+sample-003  batch-1 ATAC
+sample-004  batch-1 RNA
+sample-004  batch-1 ATAC
+sample-005  batch-2 RNA
+sample-005  batch-2 ATAC
+sample-006  batch-2 RNA
+sample-006  batch-2 ATAC
+sample-007  batch-2 RNA
+sample-007  batch-2 ATAC
+sample-008  batch-2 RNA
+sample-008  batch-2 ATAC
