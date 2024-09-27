@@ -33,3 +33,5 @@ datatype=$(sed -n ${N}p ${PARAMFILE} | awk '{print $3}' )
 # Run myscript.sh with the job-specific arguments
 echo "Running command:"
 echo bash myscript.sh $sampleID $batch $datatype
+
+# Additional steps would follow using the same parameters
