@@ -19,6 +19,9 @@ myfunction() {
     # I put `echo` here just so it will print out the command to see what it does.
     echo "Running command:"
     echo bash myscript.sh $sampleID $batch $datatype
+
+    # Additional steps would follow here
+    
 }
 
 # Export the function 
