@@ -19,9 +19,6 @@ myfunction() {
     # I put `echo` here just so it will print out the command to see what it does.
     echo "Running command:"
     echo bash myscript.sh $sampleID $batch $datatype
-
-    # Additional steps would follow here
-    
 }
 
 # Export the function 
@@ -35,4 +32,9 @@ fi
 
 # Run `myfunction` using the file `parameters.txt` line by line
 # with all three arguments, in order
-parallel -j ${SLURM_NTASKS} -a ${PARAMFILE} myfunction {1} {2} {3}
+parallel -j ${SLURM_NTASKS} -a ${PARAMFILE} myfunction {}
+
+# Note that {} defaults to all arguments in the file, in order.
+# You can also use a subset of arguments by specifying their index
+# e.g.
+# parallel -j ${SLURM_NTASKS} -a ${PARAMFILE} myfunction {1} {2}
